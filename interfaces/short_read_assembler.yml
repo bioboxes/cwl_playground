@@ -1,0 +1,12 @@
+class: Operation
+id: org.bioboxes.short_read_assembler
+semantic: edam:op_0524
+inputs:
+  fastqs:
+    label: interleaved paired & gzipped reads
+    type: File[]
+    format: edam:format_1931  # FASTQ
+outputs:
+  contigs:
+    type: File
+    format: edam:format_1929  # FASTA
