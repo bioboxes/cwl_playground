@@ -4,7 +4,7 @@ class: CommandLineTool
 
 hints:
   DockerRequirement:
-    dockerPull: quay.io/biocontainers/megahit:1.1.1--py36_0
+    dockerPull: quay.io/biocontainers/megahit@sha256:4e8f379d9252c922871969c888f5099bee3fb8323dff01905aec866d48a2f719
   SoftwareRequirement:
     packages:
       megahit:
