@@ -11,6 +11,7 @@ inputs:
     type: File[]
     format: edam:format_2200  # FASTA
 outputs:
-  contigs:
+  assembly_metrics:
+    label: Quast assembly metrics for contiguity and errors
     type: File
     format: edam:format_3475 # TSV key-value pairs of metrics
