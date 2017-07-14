@@ -1,0 +1,17 @@
+class: Operation
+id: org.bioboxes.reference_based_assembly_evaluation
+semantic: edam:op_3209 # Genome comparison
+inputs:
+  assembly_fasta:
+    label: Assembled genome sequence FASTA files to be evaluated
+    type: File
+    format: edam:format_2200  # FASTA
+  reference_fasta:
+    label: Reference ground-truth genome sequence FASTA files
+    type: File[]
+    format: edam:format_2200  # FASTA
+outputs:
+  assembly_metrics:
+    label: Quast assembly metrics for contiguity and errors
+    type: File
+    format: edam:format_3475 # TSV key-value pairs of metrics
