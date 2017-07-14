@@ -11,11 +11,10 @@ hints:
         specs: [ "https://doi.org/10.1093/bioinformatics/btv033" ]
 
 inputs:
-  sequences:
+  fastq:
     type: File[]
     label: interleaved & gzipped fasta/q paired-end files
-    format:
-      - edam:format_1930  # FASTQ
+    format: edam:format_1930  # FASTQ
     inputBinding:
       prefix: --12
       itemSeparator: ','
